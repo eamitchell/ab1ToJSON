@@ -1,0 +1,23 @@
+body {
+    background-color: wheat;
+}
+
+
+#canvasContainer {
+    background-color: white;
+    position:relative;
+    overflow:auto;
+}
+
+#bases {
+    font-family: monospace;
+	
+    width: min-content;
+    height: fit-content;
+    white-space: normal;
+    overflow:auto;
+}
+
+.textInput {
+    width: 250px;
+}

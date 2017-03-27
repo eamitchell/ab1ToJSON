@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<br>
+<br>
+<div class="container-fluid">
+  <div class="row equal">
+    <div class="col-md-1"></div>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">Choose a file</div>
+        <div class="panel-body">
+          <input type="file" id="fileName" class=hidden>
+          <label for="fileName" class="btn btn-primary">Select File</label>
+          <br>
+          <span>Selected File Name: </span>
+          <br>
+          <input type="text" id="selectedFile" class="textInput" readonly>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Download extracted data</div>
+        <div class="panel-body">
+          File Name:<br>
+          <input type="text" id="newFileName" class="textInput">
+          <br>
+          Sequence ID:<br>
+          <input type="text" id="seqID" class="textInput">
+          <br></br>
+          <a id="downloadFASTA" class="btn btn-primary">Download FASTA</a>
+          <a id="downloadFASTQ" class="btn btn-primary">Download FASTQ</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-height col-middle">
+      <div class="inside inside-full-height">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p id="bases"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="panel panel-default">
+        <div class="panel-heading">Trace</div>
+        <div class="panel-body" id="canvasContainer">
+          <canvas id="peakCanvas" height="350" ></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+File Type: <span id="fileType"></span>
+<br>
+File Version: <span id="fileVersion"></span>
+<br>
+
+
+<script src="/clientside.js"></script>
+	
+</body>
+</html>

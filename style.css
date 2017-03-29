@@ -18,6 +18,10 @@ body {
     overflow:auto;
 }
 
+#baseContainer {
+    overflow:auto;
+}
+
 .textInput {
     width: 250px;
 }

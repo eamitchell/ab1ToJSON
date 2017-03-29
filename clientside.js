@@ -276,7 +276,6 @@ function abConverter(inputArrayBuffer) {
 }
 
 function drawTrace (traceData) {
-    console.log("in draw trace");
     var colors = {adenine:"green", thymine:"red", guanine:"black", cytosine:"blue", other:"pink"};
     var peakCanvas = document.getElementById("peakCanvas");
     var ctx = peakCanvas.getContext("2d");
@@ -328,7 +327,6 @@ function drawTrace (traceData) {
     }
 
     this.drawBases = function () {
-        console.log("in drawbases");
         //ctx.font = "24px serif";
         var xOffset = -2;
         for (var count = 0; count < traceData.baseCalls.length; count++) {
@@ -365,7 +363,6 @@ function drawTrace (traceData) {
 
 function mottTrim(baseCalls, qualScores) {
     
-    console.log(qualScores);
     var startPos = 0;
     var endPos = 0;
     var tempStart = 0;
@@ -386,5 +383,4 @@ function mottTrim(baseCalls, qualScores) {
         //console.log(startPos);
     }
     var trimmed = baseCalls.slice(startPos, endPos + 1);
-    console.log(trimmed);
 }

@@ -11,7 +11,7 @@ body {
 
 #bases {
     font-family: monospace;
-    padding-right: 4px;
+    padding-right: 8px;
     width: min-content;
     height: fit-content;
     white-space: normal;

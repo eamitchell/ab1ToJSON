@@ -1,4 +1,5 @@
 
+//Will call bindButtons after the DOM loads
 document.addEventListener('DOMContentLoaded', bindButtons);
 
 var counter = 0;
@@ -13,8 +14,6 @@ var tagDict = {"baseCalls1":{"tagName":"PBAS", "tagNum":1, "typeToReturn":"getCh
     "colorDataG":{"tagName":"DATA", "tagNum":9, "typeToReturn":"getShort"},
     "colorDataC":{"tagName":"DATA", "tagNum":12, "typeToReturn":"getShort"}
     };
-
-var form = document.forms.namedItem('fileDrop');
 
 function bindButtons(){
     document.getElementById('fileName').addEventListener('change', function subBind(event){
